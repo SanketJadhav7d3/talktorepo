@@ -6,7 +6,6 @@ import networkx as nx
 
 from app.ingest import clone_repo
 from app.retriever import VectorStore
-from app.llm import generate_answer
 from app.repo_parser.repo_indexer import RepoIndexer
 
 
@@ -15,7 +14,7 @@ app = FastAPI()
 
 class AppState:
     def __init__(self):
-        self.vector_store = VectorStore()
+        self.vector_store = None
         self.dependency_graph = nx.DiGraph()
 
 state = AppState()
@@ -43,6 +42,10 @@ def index_repo(request: RepoRequest):
     
     state.dependency_graph = indexer.get_graph()
 
+    if state.vector_store is None:
+        from app.retriever import VectorStore
+        state.vector_store = VectorStore()
+
     # Remove embeddings for files that no longer exist
     state.vector_store.delete_files(deleted_files)
 
@@ -68,6 +71,7 @@ def get_graph():
 
 @app.post("/query")
 def query_repo(request: QueryRequest):
+    from app.llm import generate_answer
 
     if state.dependency_graph.number_of_nodes() == 0:
         return {
