@@ -26,6 +26,12 @@ class RepoRequest(BaseModel):
 class QueryRequest(BaseModel):
     query: str
 
+
+@app.get("/")
+def home():
+    return "Home"
+
+
 @app.post("/index_repo")
 def index_repo(request: RepoRequest):
 
