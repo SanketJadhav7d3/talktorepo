@@ -21,19 +21,5 @@ TalkToRepo is a high-performance code intelligence engine designed to bridge the
 3.  **Extraction**: Metadata (line ranges, signatures, imports) is structured for vectorization.
 4.  **Semantic Retrieval**: Logical blocks are indexed into a Vector Store for context-aware AI querying.
 
-## ⚡ Performance
 
-| Operation | Latency (per 1k LOC) |
-| :--- | :--- |
-| AST Generation | ~1.2ms |
-| Feature Extraction | ~0.8ms |
-| **Total Pipeline** | **~2.0ms** |
 
-## 🗺 Roadmap
-
-- [ ] **Graph-Augmented RAG**: Feed 2-hop dependencies into LLM context.
-- [ ] **Incremental Indexing**: Hash-based caching for massive repo scaling.
-- [ ] **Semantic Compression**: Strip boilerplate from context to save tokens.
-
----
-*Developed with precision for AI-Native development.*
