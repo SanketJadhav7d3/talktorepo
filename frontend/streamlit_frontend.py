@@ -41,7 +41,13 @@ with st.expander("🕸️ Repository Dependency Map", expanded=False):
                         st.info("The repository has no indexed files yet.")
                     else:
                         nodes = [
-                            Node(id=n["id"], label=n["label"], color=n["color"], size=20) 
+                            Node(
+                                id=n["id"], 
+                                label=n["label"], 
+                                color=n["color"], 
+                                size=20, 
+                                font={"color": "white"}
+                            ) 
                             for n in graph_data["nodes"]
                         ]
                         edges = [
