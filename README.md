@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Language-Python%203.9+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Tree-Sitter](https://img.shields.io/badge/Engine-Tree--Sitter-green?style=for-the-badge)](https://tree-sitter.github.io/tree-sitter/)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](#)
 
 TalkToRepo is a high-performance code intelligence engine designed to bridge the gap between massive codebases and Large Language Models. Unlike standard text splitters that break code at arbitrary line counts, TalkToRepo uses **AST (Abstract Syntax Tree)** parsing to extract logical units, ensuring AI models receive syntactically complete context.
 
@@ -22,19 +21,13 @@ TalkToRepo is a high-performance code intelligence engine designed to bridge the
 3.  **Extraction**: Metadata (line ranges, signatures, imports) is structured for vectorization.
 4.  **Semantic Retrieval**: Logical blocks are indexed into a Vector Store for context-aware AI querying.
 
-## ⚡ Performance
 
-| Operation | Latency (per 1k LOC) |
-| :--- | :--- |
-| AST Generation | ~1.2ms |
-| Feature Extraction | ~0.8ms |
-| **Total Pipeline** | **~2.0ms** |
+## Images
 
-## 🗺 Roadmap
+<img width="2485" height="1431" alt="image" src="https://github.com/user-attachments/assets/a388af55-cbc4-4bd6-b960-f6bf48118572" />
 
-- [ ] **Graph-Augmented RAG**: Feed 2-hop dependencies into LLM context.
-- [ ] **Incremental Indexing**: Hash-based caching for massive repo scaling.
-- [ ] **Semantic Compression**: Strip boilerplate from context to save tokens.
+<img width="2485" height="1431" alt="image" src="https://github.com/user-attachments/assets/8d8fc284-c47d-45e5-85a8-7ed17719ee7c" />
 
----
-*Developed with precision for AI-Native development.*
+<img width="2485" height="1431" alt="image" src="https://github.com/user-attachments/assets/1a9f4d07-5878-4b90-b585-ec8bf85189f9" />
+
+
