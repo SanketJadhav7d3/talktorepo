@@ -4,8 +4,10 @@
 [![Tree-Sitter](https://img.shields.io/badge/Engine-Tree--Sitter-green?style=for-the-badge)](https://tree-sitter.github.io/tree-sitter/)
 
 
+### MCP Demo
 
 https://github.com/user-attachments/assets/4b98c904-11ae-42e8-a704-95b62840ac42
+
 
 
 
