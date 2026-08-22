@@ -1,4 +1,4 @@
-# 🔍 TalkToRepo: Structural Code Intelligence Engine
+# 🔍 TalkToRepo: Structural Code Intelligence Engine + MCP
 
 [![Python](https://img.shields.io/badge/Language-Python%203.9+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Tree-Sitter](https://img.shields.io/badge/Engine-Tree--Sitter-green?style=for-the-badge)](https://tree-sitter.github.io/tree-sitter/)
