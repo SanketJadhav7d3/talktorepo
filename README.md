@@ -3,6 +3,12 @@
 [![Python](https://img.shields.io/badge/Language-Python%203.9+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Tree-Sitter](https://img.shields.io/badge/Engine-Tree--Sitter-green?style=for-the-badge)](https://tree-sitter.github.io/tree-sitter/)
 
+
+
+https://github.com/user-attachments/assets/4b98c904-11ae-42e8-a704-95b62840ac42
+
+
+
 TalkToRepo is a high-performance code intelligence engine designed to bridge the gap between massive codebases and Large Language Models. Unlike standard text splitters that break code at arbitrary line counts, TalkToRepo uses **AST (Abstract Syntax Tree)** parsing to extract logical units, ensuring AI models receive syntactically complete context.
 
 ## 🚀 Key Features
